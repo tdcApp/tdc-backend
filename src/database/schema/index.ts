@@ -23,6 +23,7 @@ export const userRoleEnum = pgEnum('user_role', ['STUDENT', 'TEACHER', 'ADMIN'])
 export type UserRoleEnum = (typeof userRoleEnum.enumValues)[number];
 
 export const classTypeEnum = pgEnum('class_type', ['LANGUAGE', 'TECHNOLOGY']);
+export type ClassTypeEnum = (typeof classTypeEnum.enumValues)[number];
 
 export const audienceEnum = pgEnum('audience', ['ALL', 'LANGUAGE', 'TECHNOLOGY', 'CLASS']);
 
